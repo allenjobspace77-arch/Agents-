@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d18">
+  <title>GhostNet | Inteligencia</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg ghost-nav">
+    <div class="container">
+      <a class="navbar-brand brand-mark" href="Index.html">
+        <span class="brand-icon">◈</span> GHOSTNET
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNavigation"
+        aria-controls="mainNavigation"
+        aria-expanded="false"
+        aria-label="Abrir navegación"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavigation">
+        <div class="navbar-nav ms-auto gap-lg-2">
+          <a class="nav-link" href="Index.html">Operaciones</a>
+          <a class="nav-link active" aria-current="page"
+             href="agents.html">Inteligencia</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container page-container">
+    <header class="hero-panel intelligence-hero mb-4">
+      <div>
+        <div class="eyebrow">
+          <span class="status-dot"></span>
+          INTELIGENCIA / ANÁLISIS TÁCTICO
+        </div>
+        <h1 class="hero-title">Directorio clasificado</h1>
+        <p class="hero-description">
+          Supervisión de agentes, niveles de amenaza y auditoría de red.
+        </p>
+      </div>
+      <div class="system-badge">
+        <span class="status-dot"></span> MONITOREO ACTIVO
+      </div>
+    </header>
+
+    <main id="app-rootagents">
+      <div class="loading-state">Cargando expedientes...</div>
+    </main>
+
+    <footer class="site-footer">
+      GHOSTNET <span>•</span> CENTRO DE INTELIGENCIA
+      <span class="footer-version">SISTEMA DEMOSTRATIVO</span>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="agents.js"></script>
+</body>
+</html>
